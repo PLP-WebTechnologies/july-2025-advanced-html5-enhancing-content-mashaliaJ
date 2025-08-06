@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#checkout">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to BrightReads Bookshop</h1>
+        <p>Your one-stop shop for all your reading needs. We offer a variety of books for every age and interest.</p>
+        <h2>Popular Book Categories</h2>
+        <ul>
+            <li>Academics & Educational Books</li>
+            <li>Religious & Spiritual Books</li>
+            <li>Children & Young Adult Books</li>
+            <li>Science & Technology</li>
+            <li>Magazines & Periodicals</li>
+            <li>Business & Finance Books</li>
+            
+        </ul>
+    </section>
+
+    <section id="categories">
+        <h2>Available Books</h2>
+        <table border="1" cellpadding="8" >
+            <tr>
+                <th><strong>Title</strong></th>
+                <th><strong>Author</strong></th>
+                <th><strong>price ($)</strong></th>
+            </tr>
+            <tr>
+                <td>Oxford 360 Atlas</td>
+                <td>Marcus Zusak</td>
+                <td>15.08</td>
+            </tr>
+            <tr>
+                <td>My Life in Crime</td>
+                <td>John Kiriamiti</td>
+                <td>13.00</td>
+            </tr>
+            <tr>
+                <td>Basic Economics</td>
+                <td>Thomas Sowell</td>
+                <td>21.89</td>
+            </tr>
+            <tr>
+                <td>Diary of a Wimpy Kid</td>
+                <td>Jeff Kinney</td>
+                <td>9.90</td>
+            </tr>
+            <tr>
+                <td>It Ends With Us</td>
+                <td>Colleen Hoover</td>
+                <td>4.99</td>
+            </tr>
+        </table>
+    </section>
+    
+    <section id="about">
+        <h2>Featured Book of the Month</h2>
+        <img src="download.png" alt="Featured Book" width="500" height="100"><br><br>
+
+        <h3>Listen to an Audio Sample</h3>
+        <audio controls>
+            <source src="audio-sample.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <h3>Watch Our Bookshop Tour</h3>
+        <video controls width="320">
+            <source src="bookshop-tour.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+    
+    <section id="checkout">
+        <h2>Order or Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required minlength="8" maxlength="15"><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="book">Book Title:</label><br>
+            <input type="text" id="book" name="book"><br><br>
+
+            <label>Preferred Format:</label><br>
+            <input type="radio" name="format" value="Hardcover"> Hardcover
+            <input type="radio" name="format" value="Ebook"> Ebook
+            <input type="radio" name="format" value="Audiobook"> Audiobook<br><br>
+
+            <label for="category">Category:</label><br>
+            <select id="category" name="category">
+                <option value="Educational">Academics & Educational Books</option>
+                <option value="Religious">Religious & Spiritual Books</option>
+                <option value="children">Children & Young Adult Books</option>
+                <option value="science">Science & Technology</option>
+                <option value="Magazines">Magazines & Periodicals</option>
+                <option value="Business">Business & Finance Books</option>
+            </select><br><br>
+
+            <label for="message">Additional Message:</label><br>
+            <textarea id="message" name="message" rows="3" cols="30"></textarea><br><br>
+
+            <input type="checkbox" name="subscribe"> Subscribe to our newsletter<br><br>
+
+            <input type="submit" value="Submit Order">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; July 2025 Macharia Joseph. All rights reserved.</p>
+    </footer>
+        
+</body>
+</html>
